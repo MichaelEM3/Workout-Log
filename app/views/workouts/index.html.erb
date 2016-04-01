@@ -1,6 +1,6 @@
-<h1>Workout Log</h1>
-
-<% @workouts.each do |work| %>
-  <h2><%= link_to work.date.strftime("%A, %B %d"), work %></p>
-  <h3><%= work.workout %></p>
-<% end %>
+<div id="index_workouts">
+  <% @workouts.each do |work| %>
+    <h2><%= link_to work.date.strftime("%A, %B %d"), work %></h2>
+    <h3>Workout: <%= work.workout %></h3>
+  <% end %>
+</div>
