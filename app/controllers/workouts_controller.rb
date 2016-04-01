@@ -21,14 +21,14 @@ class WorkoutsController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
     if @workout.update(workout_params)
       redirect_to @workout
     else
       render 'edit'
-    end 
-  end
-
-  def update
+    end
   end
 
   def destroy
